@@ -20,7 +20,7 @@ public class QuickSort {
      * of the smaller elements to the left of the pivot element and all
      * of the greater elements to the right of the pivot element. 
      * @param int[] arr, array to sort
-     * @param int a, represents positions near the front of the array
+     * @param int a, represents positions at the front of the array
      * @param int b, represents the pivot element, initially, the last element
      */
     public static int pivotElement(int[] arr, int a, int b) {
@@ -65,14 +65,4 @@ public class QuickSort {
             System.out.print(arr[i] + " ");
         }
     }
-
-    public static void main(String[] args)
-    {
-        int[] arr = {7, 4, 3, 6, 5};
-
-        quickSort(arr, 0, arr.length-1);
-        System.out.println("Sorted array:");
-        printArr(arr);
-    }
-
 }
